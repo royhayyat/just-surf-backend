@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Just Surf - ניהול חסויות</title>
+<style>
+  :root { --blue: #0288D1; --dark: #263238; --muted: #78909C; --line: #E3E8EC; --bg: #F4F7F6; --ok: #00A152; --bad: #E53935; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, "Segoe UI", Heebo, Arial, sans-serif; background: var(--bg); color: var(--dark); }
+  header { background: #fff; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 5; }
+  header h1 { margin: 0; font-size: 20px; }
+  main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 60px; }
+  button { font: inherit; cursor: pointer; border: 0; border-radius: 10px; padding: 9px 16px; font-weight: 700; }
+  .primary { background: var(--blue); color: #fff; }
+  .ghost { background: #ECEFF1; color: var(--dark); }
+  .danger { background: #FFEBEE; color: var(--bad); }
+  input, select, textarea { font: inherit; width: 100%; padding: 9px 11px; border: 1px solid #CFD8DC; border-radius: 9px; background: #fff; }
+  label { display: block; font-size: 13px; font-weight: 700; color: #455A64; margin: 12px 0 5px; }
+  .hint { font-size: 12px; color: var(--muted); font-weight: 400; }
+  .card { background: #fff; border-radius: 14px; padding: 18px; box-shadow: 0 2px 8px rgba(0,0,0,.05); }
+  .row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .row > * { flex: 1 1 200px; }
+  .toolbar { display: flex; gap: 10px; align-items: center; justify-content: space-between; margin-bottom: 14px; flex-wrap: wrap; }
+  .tabs button { background: #ECEFF1; margin-left: 6px; }
+  .tabs button.on { background: var(--dark); color: #fff; }
+  .list { display: grid; gap: 12px; }
+  .item { display: grid; grid-template-columns: 84px 1fr auto; gap: 14px; align-items: center; }
+  .thumb { width: 84px; height: 56px; border-radius: 8px; background: #ECEFF1 center/cover no-repeat; }
+  .meta { font-size: 13px; color: var(--muted); margin-top: 3px; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 10px; margin-inline-start: 6px; }
+  .live { background: #E8F5E9; color: var(--ok); } .off { background: #ECEFF1; color: var(--muted); }
+  .nums { text-align: center; font-size: 13px; min-width: 210px; }
+  .nums b { display: block; font-size: 18px; }
+  .nums .cols { display: flex; gap: 16px; justify-content: center; }
+  .actions { display: flex; gap: 6px; margin-top: 8px; justify-content: center; }
+  .actions button { padding: 6px 10px; font-size: 13px; }
+  dialog { border: 0; border-radius: 16px; padding: 0; width: min(760px, 96vw); max-height: 92vh; }
+  dialog::backdrop { background: rgba(0,0,0,.45); }
+  .dlg-head { padding: 14px 18px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; background: #fff; z-index: 2; }
+  .dlg-body { padding: 4px 18px 18px; }
+  .dlg-foot { padding: 12px 18px; border-top: 1px solid var(--line); display: flex; gap: 8px; justify-content: flex-start; position: sticky; bottom: 0; background: #fff; }
+  .spots { border: 1px solid var(--line); border-radius: 10px; max-height: 260px; overflow: auto; padding: 6px 10px; }
+  .spots h4 { margin: 10px 0 4px; font-size: 13px; display: flex; align-items: center; gap: 8px; }
+  .spots label.chk, .chk { display: inline-flex; align-items: center; gap: 6px; font-weight: 400; margin: 3px 0 3px 14px; font-size: 13px; color: var(--dark); }
+  .chk input { width: auto; }
+  .preview { margin-top: 14px; background: #F4F7F6; border-radius: 12px; padding: 12px; }
+  .banner { background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.08); max-width: 360px; }
+  .banner .img { height: 120px; background: #CFD8DC center/cover no-repeat; }
+  .banner .body { padding: 10px 12px; display: flex; gap: 10px; align-items: center; }
+  .banner .t { font-weight: 800; } .banner .s { font-size: 12px; color: #546E7A; }
+  .banner .cta { margin-inline-start: auto; background: var(--blue); color: #fff; border-radius: 14px; padding: 6px 12px; font-size: 12px; font-weight: 800; white-space: nowrap; }
+  .banner .tag { font-size: 10px; color: #90A4AE; font-weight: 800; letter-spacing: .5px; padding: 6px 12px 0; }
+  .errors { color: var(--bad); font-size: 13px; margin-top: 10px; white-space: pre-line; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { padding: 7px; border-bottom: 1px solid var(--line); text-align: right; }
+  #login { max-width: 360px; margin: 12vh auto; }
+  .empty { text-align: center; color: var(--muted); padding: 40px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🌊 Just Surf · ניהול חסויות</h1>
+  <button class="ghost" id="logout" hidden>יציאה</button>
+</header>
+
+<main>
+  <section id="login" class="card">
+    <h2 style="margin-top:0">כניסה</h2>
+    <label>סיסמת מנהל</label>
+    <input type="password" id="password" autocomplete="current-password">
+    <div class="errors" id="loginError"></div>
+    <button class="primary" id="loginBtn" style="margin-top:14px;width:100%">כניסה</button>
+  </section>
+
+  <section id="panel" hidden>
+    <div class="toolbar">
+      <div class="tabs">
+        <button data-app="all" class="on">הכל</button>
+        <button data-app="il">🇮🇱 ישראל</button>
+        <button data-app="us">🇺🇸 ארה"ב</button>
+      </div>
+      <button class="primary" id="newBtn">+ חסות חדשה</button>
+    </div>
+    <div class="list" id="list"></div>
+  </section>
+</main>
+
+<dialog id="editor">
+  <form method="dialog" id="form">
+    <div class="dlg-head"><b id="editorTitle">חסות חדשה</b><button class="ghost" value="cancel">✕</button></div>
+    <div class="dlg-body">
+      <div class="row">
+        <div><label>אפליקציה</label>
+          <select name="app"><option value="il">🇮🇱 JUST SURF ישראל</option><option value="us">🇺🇸 JUST SURF US</option></select></div>
+        <div><label>שם המפרסם <span class="hint">(לשימוש שלך בלבד)</span></label><input name="advertiser" maxlength="80" required></div>
+      </div>
+      <label>כותרת <span class="hint">(עד 60 תווים)</span></label><input name="title" maxlength="60" required>
+      <label>טקסט <span class="hint">(עד 140 תווים)</span></label><input name="text" maxlength="140">
+      <div class="row">
+        <div><label>טקסט הכפתור <span class="hint">(למשל "להזמנה")</span></label><input name="ctaLabel" maxlength="30"></div>
+        <div><label>קישור בלחיצה <span class="hint">(אתר, וואטסאפ, אינסטגרם)</span></label><input name="linkUrl" type="url" placeholder="https://" required></div>
+      </div>
+      <label>תמונה <span class="hint">(יחס 3:1 מומלץ, למשל 1200×400. מוקטנת אוטומטית)</span></label>
+      <input type="file" id="imageFile" accept="image/png,image/jpeg,image/webp">
+      <label class="chk" id="removeImageWrap" hidden><input type="checkbox" id="removeImage"> הסר את התמונה הקיימת</label>
+      <div class="row">
+        <div><label>מתאריך</label><input name="startDate" type="date" required></div>
+        <div><label>עד תאריך (כולל)</label><input name="endDate" type="date" required></div>
+        <div><label>עדיפות <span class="hint">(0-100, גבוה מוצג קודם)</span></label><input name="priority" type="number" min="0" max="100" value="0"></div>
+      </div>
+      <label class="chk"><input type="checkbox" name="active" checked> פעיל</label>
+
+      <label>איפה להציג</label>
+      <label class="chk"><input type="checkbox" name="allSpots" id="allSpots"> בכל החופים</label>
+      <input type="search" id="spotSearch" placeholder="חיפוש חוף..." style="margin:6px 0">
+      <div class="spots" id="spots"></div>
+
+      <div class="preview"><div class="hint" style="margin-bottom:6px">תצוגה מקדימה באפליקציה</div><div id="preview"></div></div>
+      <div class="errors" id="formError"></div>
+    </div>
+    <div class="dlg-foot">
+      <button class="primary" value="default" id="saveBtn">שמירה</button>
+      <button class="ghost" value="cancel">ביטול</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="statsDlg">
+  <div class="dlg-head"><b id="statsTitle">סטטיסטיקה</b><button class="ghost" onclick="statsDlg.close()">✕</button></div>
+  <div class="dlg-body" id="statsBody"></div>
+  <div class="dlg-foot"><button class="ghost" id="csvBtn">הורדת CSV</button></div>
+</dialog>
+
+<script>
+const $ = (s) => document.querySelector(s);
+const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+let password = sessionStorage.getItem('adminPassword') || '';
+let sponsors = [];
+let filter = 'all';
+let editing = null;
+let imageData = null;
+const spotsCache = {};
+
+async function api(path, options = {}) {
+  const res = await fetch(path, { ...options, headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${password}`, ...(options.headers || {}) } });
+  if (res.status === 401) { logout(); throw new Error('סיסמה שגויה'); }
+  const body = res.status === 204 ? null : await res.json().catch(() => null);
+  if (!res.ok) throw new Error((body && (body.errors || [body.error]).join('\n')) || `שגיאה ${res.status}`);
+  return body;
+}
+
+async function login() {
+  password = $('#password').value;
+  $('#loginError').textContent = '';
+  try {
+    await api('/api/admin/check');
+    sessionStorage.setItem('adminPassword', password);
+    showPanel();
+  } catch (e) { $('#loginError').textContent = e.message; }
+}
+function logout() { sessionStorage.removeItem('adminPassword'); password = ''; $('#panel').hidden = true; $('#logout').hidden = true; $('#login').hidden = false; }
+async function showPanel() { $('#login').hidden = true; $('#panel').hidden = false; $('#logout').hidden = false; await load(); }
+
+const fmtDate = (d) => new Date(d).toLocaleDateString('he-IL');
+const ctr = (s) => (s.impressions ? ((s.clicks / s.impressions) * 100).toFixed(1) + '%' : '-');
+
+async function load() {
+  sponsors = await api('/api/admin/sponsors');
+  render();
+}
+
+function render() {
+  const items = sponsors.filter((s) => filter === 'all' || s.app === filter);
+  if (!items.length) { $('#list').innerHTML = '<div class="card empty">אין עדיין חסויות. לחץ "+ חסות חדשה".</div>'; return; }
+  $('#list').innerHTML = items.map((s) => {
+    const count = (n, one, many) => (n === 1 ? one : `${n} ${many}`);
+    const where = s.allSpots ? 'כל החופים' : [s.regions.length ? count(s.regions.length, 'אזור אחד', 'אזורים') : '', s.spotIds.length ? count(s.spotIds.length, 'חוף אחד', 'חופים') : ''].filter(Boolean).join(' + ');
+    return `<div class="card item">
+      <div class="thumb" style="${s.hasImage ? `background-image:url('/api/sponsors/${s.id}/image?v=${s.imageVersion}')` : ''}"></div>
+      <div>
+        <b>${esc(s.title)}</b><span class="badge ${s.live ? 'live' : 'off'}">${s.live ? 'באוויר' : (s.active ? 'לא בתאריכים' : 'כבוי')}</span>
+        <div class="meta">${s.app === 'il' ? '🇮🇱' : '🇺🇸'} ${esc(s.advertiser)} · ${fmtDate(s.startDate)} - ${fmtDate(s.endDate)} · ${esc(where)}</div>
+      </div>
+      <div class="nums">
+        <div class="cols"><div><b>${s.impressions}</b>צפיות</div><div><b>${s.clicks}</b>לחיצות</div><div><b>${ctr(s)}</b>הקלקה</div></div>
+        <div class="actions">
+          <button class="ghost" onclick="openEditor('${s.id}')">עריכה</button>
+          <button class="ghost" onclick="showStats('${s.id}')">דוח</button>
+          <button class="danger" onclick="removeSponsor('${s.id}')">מחיקה</button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+async function loadSpots(app) {
+  if (!spotsCache[app]) spotsCache[app] = await (await fetch(`/admin/spots-${app}.json`)).json();
+  return spotsCache[app];
+}
+
+async function renderSpots() {
+  const form = $('#form');
+  const data = await loadSpots(form.app.value);
+  const q = $('#spotSearch').value.trim().toLowerCase();
+  const selRegions = new Set(editing ? editing.regions : []);
+  const selSpots = new Set(editing ? editing.spotIds : []);
+  $('#spots').innerHTML = data.regions.map((r) => {
+    const spots = r.spots.filter((s) => !q || s.name.toLowerCase().includes(q));
+    if (q && !spots.length) return '';
+    return `<h4><label class="chk" style="margin:0"><input type="checkbox" class="region" value="${esc(r.id)}" ${selRegions.has(r.id) ? 'checked' : ''}> <b>${esc(r.label)}</b> (כל האזור)</label></h4>
+      ${spots.map((s) => `<label class="chk"><input type="checkbox" class="spot" value="${esc(s.id)}" ${selSpots.has(s.id) ? 'checked' : ''}> ${esc(s.name)}</label>`).join('')}`;
+  }).join('');
+  $('#spots').style.opacity = form.allSpots.checked ? 0.4 : 1;
+}
+
+// Keep checkbox choices while searching / switching
+function readTargets() {
+  editing = editing || { regions: [], spotIds: [] };
+  const visibleRegions = [...document.querySelectorAll('#spots .region')];
+  const visibleSpots = [...document.querySelectorAll('#spots .spot')];
+  const regions = new Set(editing.regions); const spotIds = new Set(editing.spotIds);
+  visibleRegions.forEach((c) => (c.checked ? regions.add(c.value) : regions.delete(c.value)));
+  visibleSpots.forEach((c) => (c.checked ? spotIds.add(c.value) : spotIds.delete(c.value)));
+  editing.regions = [...regions]; editing.spotIds = [...spotIds];
+}
+
+function renderPreview() {
+  const f = $('#form');
+  const img = imageData || (editing && editing.id && editing.hasImage && !$('#removeImage').checked ? `/api/sponsors/${editing.id}/image?v=${editing.imageVersion}` : null);
+  const sponsored = f.app.value === 'il' ? 'ממומן' : 'SPONSORED';
+  $('#preview').innerHTML = `<div class="banner" dir="${f.app.value === 'il' ? 'rtl' : 'ltr'}">
+    <div class="tag">${sponsored}</div>
+    ${img ? `<div class="img" style="background-image:url('${img}')"></div>` : ''}
+    <div class="body"><div><div class="t">${esc(f.title.value || 'כותרת')}</div><div class="s">${esc(f.text.value)}</div></div>
+    ${f.ctaLabel.value ? `<span class="cta">${esc(f.ctaLabel.value)}</span>` : ''}</div></div>`;
+}
+
+const toInputDate = (d) => new Date(d).toISOString().slice(0, 10);
+
+async function openEditor(id) {
+  const s = id ? sponsors.find((x) => x.id === id) : null;
+  editing = s ? { ...s } : { regions: [], spotIds: [] };
+  imageData = null;
+  const f = $('#form');
+  f.reset();
+  $('#editorTitle').textContent = s ? 'עריכת חסות' : 'חסות חדשה';
+  $('#formError').textContent = '';
+  $('#spotSearch').value = '';
+  $('#removeImageWrap').hidden = !(s && s.hasImage);
+  const today = new Date();
+  f.app.value = s ? s.app : (filter === 'us' ? 'us' : 'il');
+  f.advertiser.value = s ? s.advertiser : '';
+  f.title.value = s ? s.title : '';
+  f.text.value = s ? s.text : '';
+  f.ctaLabel.value = s ? s.ctaLabel : '';
+  f.linkUrl.value = s ? s.linkUrl : '';
+  f.startDate.value = toInputDate(s ? s.startDate : today);
+  f.endDate.value = toInputDate(s ? s.endDate : new Date(today.getTime() + 30 * 86400000));
+  f.priority.value = s ? s.priority : 0;
+  f.active.checked = s ? s.active : true;
+  f.allSpots.checked = s ? s.allSpots : false;
+  await renderSpots();
+  renderPreview();
+  $('#editor').showModal();
+}
+
+// Resize the image in the browser: max 1200px wide, JPEG, so it stays small and fast in the app
+function resizeImage(file) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.onload = () => {
+      const scale = Math.min(1, 1200 / img.width);
+      const canvas = document.createElement('canvas');
+      canvas.width = Math.round(img.width * scale); canvas.height = Math.round(img.height * scale);
+      canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
+      resolve(canvas.toDataURL('image/jpeg', 0.85));
+    };
+    img.onerror = () => reject(new Error('לא ניתן לקרוא את התמונה'));
+    img.src = URL.createObjectURL(file);
+  });
+}
+
+async function save(e) {
+  e.preventDefault();
+  readTargets();
+  const f = $('#form');
+  const body = {
+    app: f.app.value, advertiser: f.advertiser.value, title: f.title.value, text: f.text.value,
+    ctaLabel: f.ctaLabel.value, linkUrl: f.linkUrl.value.trim(),
+    startDate: new Date(`${f.startDate.value}T00:00:00`).toISOString(),
+    endDate: new Date(`${f.endDate.value}T23:59:59`).toISOString(),
+    priority: Number(f.priority.value) || 0, active: f.active.checked,
+    allSpots: f.allSpots.checked, regions: editing.regions, spotIds: editing.spotIds,
+  };
+  if (imageData) body.image = imageData;
+  if ($('#removeImage').checked && !imageData) body.removeImage = true;
+  try {
+    $('#saveBtn').disabled = true;
+    if (editing.id) await api(`/api/admin/sponsors/${editing.id}`, { method: 'PUT', body: JSON.stringify(body) });
+    else await api('/api/admin/sponsors', { method: 'POST', body: JSON.stringify(body) });
+    $('#editor').close();
+    await load();
+  } catch (err) { $('#formError').textContent = err.message; }
+  finally { $('#saveBtn').disabled = false; }
+}
+
+async function removeSponsor(id) {
+  const s = sponsors.find((x) => x.id === id);
+  if (!confirm(`למחוק את "${s.title}"? גם הסטטיסטיקה שלה תימחק.`)) return;
+  await api(`/api/admin/sponsors/${id}`, { method: 'DELETE' });
+  await load();
+}
+
+let statsRows = [];
+async function showStats(id) {
+  const s = sponsors.find((x) => x.id === id);
+  statsRows = await api(`/api/admin/sponsors/${id}/stats`);
+  $('#statsTitle').textContent = `דוח: ${s.title}`;
+  $('#csvBtn').onclick = () => {
+    const csv = 'day,impressions,clicks\n' + statsRows.map((r) => `${r.day},${r.impressions},${r.clicks}`).join('\n');
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' }));
+    a.download = `${s.advertiser}-stats.csv`; a.click();
+  };
+  $('#statsBody').innerHTML = statsRows.length
+    ? `<table><tr><th>יום</th><th>צפיות</th><th>לחיצות</th><th>אחוז הקלקה</th></tr>${statsRows.map((r) => `<tr><td>${r.day}</td><td>${r.impressions}</td><td>${r.clicks}</td><td>${ctr(r)}</td></tr>`).join('')}
+       <tr><th>סה"כ</th><th>${s.impressions}</th><th>${s.clicks}</th><th>${ctr(s)}</th></tr></table>`
+    : '<div class="empty">עוד אין נתונים</div>';
+  $('#statsDlg').showModal();
+}
+
+$('#loginBtn').onclick = login;
+$('#password').onkeydown = (e) => { if (e.key === 'Enter') login(); };
+$('#logout').onclick = logout;
+$('#newBtn').onclick = () => openEditor(null);
+document.querySelectorAll('.tabs button').forEach((b) => (b.onclick = () => {
+  document.querySelectorAll('.tabs button').forEach((x) => x.classList.toggle('on', x === b));
+  filter = b.dataset.app; render();
+}));
+$('#form').addEventListener('submit', (e) => { if (e.submitter && e.submitter.value === 'cancel') return; save(e); });
+$('#form').addEventListener('input', renderPreview);
+$('#form').app.addEventListener('change', () => { editing.regions = []; editing.spotIds = []; renderSpots(); });
+$('#allSpots').addEventListener('change', renderSpots);
+$('#spotSearch').addEventListener('input', () => { readTargets(); renderSpots(); });
+$('#spots').addEventListener('change', readTargets);
+$('#removeImage').addEventListener('change', renderPreview);
+$('#imageFile').addEventListener('change', async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  try { imageData = await resizeImage(file); renderPreview(); }
+  catch (err) { $('#formError').textContent = err.message; }
+});
+
+if (password) showPanel().catch(() => logout());
+</script>
+</body>
+</html>

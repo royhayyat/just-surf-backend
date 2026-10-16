@@ -1,16 +1,7 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
 
-// אותה תבנית בדיוק כמו בשרת שלנו
-const articleSchema = new mongoose.Schema({
-    title: String,
-    content: String,
-    date: { type: Date, default: Date.now },
-    status: { type: String, enum: ['pending', 'approved'], default: 'pending' },
-    sourceUrl: String
-});
-
-const Article = mongoose.model('Article', articleSchema);
+const { Article } = require('./src/models');
 
 const injectTestArticle = async () => {
     try {

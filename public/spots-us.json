@@ -1,0 +1,1125 @@
+{
+ "app": "us",
+ "regions": [
+  {
+   "id": "California - San Diego",
+   "label": "California - San Diego",
+   "spots": [
+    {
+     "id": "ca_sd_1",
+     "name": "Lower Trestles"
+    },
+    {
+     "id": "ca_sd_2",
+     "name": "Upper Trestles"
+    },
+    {
+     "id": "ca_sd_3",
+     "name": "Cottons"
+    },
+    {
+     "id": "ca_sd_4",
+     "name": "San Onofre (Old Man's)"
+    },
+    {
+     "id": "ca_sd_5",
+     "name": "San O (The Point)"
+    },
+    {
+     "id": "ca_sd_6",
+     "name": "Trails"
+    },
+    {
+     "id": "ca_sd_7",
+     "name": "Oceanside Harbor (North)"
+    },
+    {
+     "id": "ca_sd_8",
+     "name": "Oceanside Pier"
+    },
+    {
+     "id": "ca_sd_9",
+     "name": "Tamarack"
+    },
+    {
+     "id": "ca_sd_10",
+     "name": "Ponto"
+    },
+    {
+     "id": "ca_sd_11",
+     "name": "Grandview"
+    },
+    {
+     "id": "ca_sd_12",
+     "name": "Beacons"
+    },
+    {
+     "id": "ca_sd_13",
+     "name": "Moonlight Beach"
+    },
+    {
+     "id": "ca_sd_14",
+     "name": "D Street"
+    },
+    {
+     "id": "ca_sd_15",
+     "name": "Swami's"
+    },
+    {
+     "id": "ca_sd_16",
+     "name": "Pipes"
+    },
+    {
+     "id": "ca_sd_17",
+     "name": "Cardiff Reef"
+    },
+    {
+     "id": "ca_sd_18",
+     "name": "Seaside Reef"
+    },
+    {
+     "id": "ca_sd_19",
+     "name": "Del Mar Rivermouth"
+    },
+    {
+     "id": "ca_sd_20",
+     "name": "15th St Del Mar"
+    },
+    {
+     "id": "ca_sd_21",
+     "name": "Black's Beach"
+    },
+    {
+     "id": "ca_sd_22",
+     "name": "Scripps Pier"
+    },
+    {
+     "id": "ca_sd_23",
+     "name": "La Jolla Shores"
+    },
+    {
+     "id": "ca_sd_24",
+     "name": "La Jolla Cove"
+    },
+    {
+     "id": "ca_sd_25",
+     "name": "Windansea"
+    },
+    {
+     "id": "ca_sd_26",
+     "name": "Big Rock"
+    },
+    {
+     "id": "ca_sd_27",
+     "name": "Tourmaline"
+    },
+    {
+     "id": "ca_sd_28",
+     "name": "Pacific Beach (PB)"
+    },
+    {
+     "id": "ca_sd_29",
+     "name": "Mission Beach"
+    },
+    {
+     "id": "ca_sd_30",
+     "name": "Ocean Beach (OB) Pier"
+    },
+    {
+     "id": "ca_sd_31",
+     "name": "Sunset Cliffs"
+    },
+    {
+     "id": "ca_sd_32",
+     "name": "Imperial Beach"
+    }
+   ]
+  },
+  {
+   "id": "California - Orange County",
+   "label": "California - Orange County",
+   "spots": [
+    {
+     "id": "ca_oc_1",
+     "name": "Seal Beach Pier"
+    },
+    {
+     "id": "ca_oc_2",
+     "name": "Bolsa Chica"
+    },
+    {
+     "id": "ca_oc_3",
+     "name": "Goldenwest"
+    },
+    {
+     "id": "ca_oc_4",
+     "name": "Huntington Beach Pier"
+    },
+    {
+     "id": "ca_oc_5",
+     "name": "HB Southside"
+    },
+    {
+     "id": "ca_oc_6",
+     "name": "Huntington State Beach"
+    },
+    {
+     "id": "ca_oc_7",
+     "name": "Santa Ana River Jetties"
+    },
+    {
+     "id": "ca_oc_8",
+     "name": "54th/56th Street"
+    },
+    {
+     "id": "ca_oc_9",
+     "name": "Blackies"
+    },
+    {
+     "id": "ca_oc_10",
+     "name": "Newport Point"
+    },
+    {
+     "id": "ca_oc_11",
+     "name": "The Wedge"
+    },
+    {
+     "id": "ca_oc_12",
+     "name": "Corona Del Mar"
+    },
+    {
+     "id": "ca_oc_13",
+     "name": "Crystal Cove"
+    },
+    {
+     "id": "ca_oc_14",
+     "name": "Laguna Beach (Main)"
+    },
+    {
+     "id": "ca_oc_15",
+     "name": "Brooks St"
+    },
+    {
+     "id": "ca_oc_16",
+     "name": "Thalia St"
+    },
+    {
+     "id": "ca_oc_17",
+     "name": "Rockpile"
+    },
+    {
+     "id": "ca_oc_18",
+     "name": "Aliso Beach"
+    },
+    {
+     "id": "ca_oc_19",
+     "name": "Salt Creek"
+    },
+    {
+     "id": "ca_oc_20",
+     "name": "Strands"
+    },
+    {
+     "id": "ca_oc_21",
+     "name": "Doheny"
+    },
+    {
+     "id": "ca_oc_22",
+     "name": "T-Street"
+    },
+    {
+     "id": "ca_oc_23",
+     "name": "San Clemente Pier"
+    },
+    {
+     "id": "ca_oc_24",
+     "name": "Riviera"
+    },
+    {
+     "id": "ca_oc_25",
+     "name": "State Park (San Clemente)"
+    }
+   ]
+  },
+  {
+   "id": "California - LA & Ventura",
+   "label": "California - LA & Ventura",
+   "spots": [
+    {
+     "id": "ca_la_1",
+     "name": "County Line"
+    },
+    {
+     "id": "ca_la_2",
+     "name": "Leo Carrillo"
+    },
+    {
+     "id": "ca_la_3",
+     "name": "Zeroes"
+    },
+    {
+     "id": "ca_la_4",
+     "name": "Zuma Beach"
+    },
+    {
+     "id": "ca_la_5",
+     "name": "Point Dume"
+    },
+    {
+     "id": "ca_la_6",
+     "name": "Malibu (First Point)"
+    },
+    {
+     "id": "ca_la_7",
+     "name": "Malibu (Second Point)"
+    },
+    {
+     "id": "ca_la_8",
+     "name": "Topanga Beach"
+    },
+    {
+     "id": "ca_la_9",
+     "name": "Sunset Blvd"
+    },
+    {
+     "id": "ca_la_10",
+     "name": "Santa Monica Pier"
+    },
+    {
+     "id": "ca_la_11",
+     "name": "Venice Breakwater"
+    },
+    {
+     "id": "ca_la_12",
+     "name": "El Porto"
+    },
+    {
+     "id": "ca_la_13",
+     "name": "Manhattan Beach Pier"
+    },
+    {
+     "id": "ca_la_14",
+     "name": "Hermosa Beach Pier"
+    },
+    {
+     "id": "ca_la_15",
+     "name": "Redondo Breakwall"
+    },
+    {
+     "id": "ca_la_16",
+     "name": "Torrance Beach"
+    },
+    {
+     "id": "ca_ven_1",
+     "name": "Rincon (The Queen)"
+    },
+    {
+     "id": "ca_ven_2",
+     "name": "C-Street (Ventura)"
+    },
+    {
+     "id": "ca_ven_3",
+     "name": "Emma Wood"
+    },
+    {
+     "id": "ca_ven_4",
+     "name": "Pitas Point"
+    }
+   ]
+  },
+  {
+   "id": "California - Central & North",
+   "label": "California - Central & North",
+   "spots": [
+    {
+     "id": "ca_sb_1",
+     "name": "Sandspit"
+    },
+    {
+     "id": "ca_sb_2",
+     "name": "El Capitan"
+    },
+    {
+     "id": "ca_sb_3",
+     "name": "Jalama"
+    },
+    {
+     "id": "ca_slo_1",
+     "name": "Pismo Beach Pier"
+    },
+    {
+     "id": "ca_slo_2",
+     "name": "Morro Bay"
+    },
+    {
+     "id": "ca_sc_1",
+     "name": "Steamer Lane"
+    },
+    {
+     "id": "ca_sc_2",
+     "name": "Pleasure Point"
+    },
+    {
+     "id": "ca_sc_3",
+     "name": "The Hook"
+    },
+    {
+     "id": "ca_sc_4",
+     "name": "Cowell's"
+    },
+    {
+     "id": "ca_sc_5",
+     "name": "Waddell Creek"
+    },
+    {
+     "id": "ca_sf_1",
+     "name": "Mavericks"
+    },
+    {
+     "id": "ca_sf_2",
+     "name": "Ocean Beach (Kelly's)"
+    },
+    {
+     "id": "ca_sf_3",
+     "name": "Fort Point"
+    },
+    {
+     "id": "ca_sf_4",
+     "name": "Cronkhite"
+    }
+   ]
+  },
+  {
+   "id": "Hawaii - Oahu",
+   "label": "Hawaii - Oahu",
+   "spots": [
+    {
+     "id": "hi_oahu_1",
+     "name": "Banzai Pipeline"
+    },
+    {
+     "id": "hi_oahu_2",
+     "name": "Backdoor"
+    },
+    {
+     "id": "hi_oahu_3",
+     "name": "Off The Wall"
+    },
+    {
+     "id": "hi_oahu_4",
+     "name": "Sunset Beach"
+    },
+    {
+     "id": "hi_oahu_5",
+     "name": "Waimea Bay"
+    },
+    {
+     "id": "hi_oahu_6",
+     "name": "Rocky Point"
+    },
+    {
+     "id": "hi_oahu_7",
+     "name": "Velzyland"
+    },
+    {
+     "id": "hi_oahu_8",
+     "name": "Haleiwa"
+    },
+    {
+     "id": "hi_oahu_9",
+     "name": "Laniakea"
+    },
+    {
+     "id": "hi_oahu_10",
+     "name": "Chun's Reef"
+    },
+    {
+     "id": "hi_oahu_ns_11",
+     "name": "Pua'ena Point"
+    },
+    {
+     "id": "hi_oahu_ns_12",
+     "name": "Jocko's"
+    },
+    {
+     "id": "hi_oahu_ns_13",
+     "name": "Leftovers"
+    },
+    {
+     "id": "hi_oahu_ns_14",
+     "name": "Log Cabins"
+    },
+    {
+     "id": "hi_oahu_ns_15",
+     "name": "Rockdowns"
+    },
+    {
+     "id": "hi_oahu_ns_16",
+     "name": "Pupukea"
+    },
+    {
+     "id": "hi_oahu_ns_17",
+     "name": "Gas Chambers"
+    },
+    {
+     "id": "hi_oahu_ns_18",
+     "name": "Kammieland"
+    },
+    {
+     "id": "hi_oahu_ns_19",
+     "name": "Backyards"
+    },
+    {
+     "id": "hi_oahu_ns_20",
+     "name": "Phantoms"
+    },
+    {
+     "id": "hi_oahu_ns_21",
+     "name": "Revelations"
+    },
+    {
+     "id": "hi_oahu_ss_1",
+     "name": "Ala Moana Bowls"
+    },
+    {
+     "id": "hi_oahu_ss_2",
+     "name": "Kaisers"
+    },
+    {
+     "id": "hi_oahu_ss_3",
+     "name": "Rockpile"
+    },
+    {
+     "id": "hi_oahu_ss_4",
+     "name": "Inbetweens"
+    },
+    {
+     "id": "hi_oahu_ss_5",
+     "name": "Tennis Courts"
+    },
+    {
+     "id": "hi_oahu_ss_6",
+     "name": "Concessions"
+    },
+    {
+     "id": "hi_oahu_ss_7",
+     "name": "Big Rights"
+    },
+    {
+     "id": "hi_oahu_ss_8",
+     "name": "Kewalos"
+    },
+    {
+     "id": "hi_oahu_ss_9",
+     "name": "Point Panic"
+    },
+    {
+     "id": "hi_oahu_ss_10",
+     "name": "Flies"
+    },
+    {
+     "id": "hi_oahu_ss_11",
+     "name": "Incinerators"
+    },
+    {
+     "id": "hi_oahu_ss_12",
+     "name": "Sand Island"
+    },
+    {
+     "id": "hi_oahu_ss_13",
+     "name": "Waikiki (Canoes)"
+    },
+    {
+     "id": "hi_oahu_ss_14",
+     "name": "Waikiki (Queens)"
+    },
+    {
+     "id": "hi_oahu_ss_15",
+     "name": "Populars (Pops)"
+    },
+    {
+     "id": "hi_oahu_ss_16",
+     "name": "Threes"
+    },
+    {
+     "id": "hi_oahu_ss_17",
+     "name": "Fours"
+    },
+    {
+     "id": "hi_oahu_ss_18",
+     "name": "Publics"
+    },
+    {
+     "id": "hi_oahu_ss_19",
+     "name": "Tonggs"
+    },
+    {
+     "id": "hi_oahu_ss_20",
+     "name": "Suicides"
+    },
+    {
+     "id": "hi_oahu_ss_21",
+     "name": "Diamond Head (Cliffs)"
+    },
+    {
+     "id": "hi_oahu_ss_22",
+     "name": "Lighthouse"
+    },
+    {
+     "id": "hi_oahu_ss_23",
+     "name": "Mansions"
+    },
+    {
+     "id": "hi_oahu_ss_24",
+     "name": "Black Point"
+    },
+    {
+     "id": "hi_oahu_ss_25",
+     "name": "Cromwells"
+    },
+    {
+     "id": "hi_oahu_ss_26",
+     "name": "Wailupe"
+    },
+    {
+     "id": "hi_oahu_ss_27",
+     "name": "Sandy Beach"
+    },
+    {
+     "id": "hi_oahu_ss_28",
+     "name": "Makapu'u"
+    },
+    {
+     "id": "hi_oahu_ws_1",
+     "name": "Tracks"
+    },
+    {
+     "id": "hi_oahu_ws_2",
+     "name": "Nanakuli"
+    },
+    {
+     "id": "hi_oahu_ws_3",
+     "name": "Maili"
+    },
+    {
+     "id": "hi_oahu_ws_4",
+     "name": "Makaha"
+    },
+    {
+     "id": "hi_oahu_ws_5",
+     "name": "Yokohama Bay"
+    },
+    {
+     "id": "hi_oahu_es_1",
+     "name": "Pounders"
+    },
+    {
+     "id": "hi_oahu_es_2",
+     "name": "Hauula"
+    },
+    {
+     "id": "hi_oahu_es_3",
+     "name": "Castles"
+    },
+    {
+     "id": "hi_oahu_es_4",
+     "name": "North Beach (KMCB)"
+    },
+    {
+     "id": "hi_oahu_es_5",
+     "name": "Pyramid Rock"
+    }
+   ]
+  },
+  {
+   "id": "Hawaii - Maui",
+   "label": "Hawaii - Maui",
+   "spots": [
+    {
+     "id": "hi_maui_1",
+     "name": "Jaws (Pe'ahi)"
+    },
+    {
+     "id": "hi_maui_2",
+     "name": "Ho'okipa"
+    },
+    {
+     "id": "hi_maui_3",
+     "name": "Lanes"
+    },
+    {
+     "id": "hi_maui_4",
+     "name": "Mama's Fish House"
+    },
+    {
+     "id": "hi_maui_5",
+     "name": "Kanaha"
+    },
+    {
+     "id": "hi_maui_6",
+     "name": "Kahului Harbor"
+    },
+    {
+     "id": "hi_maui_7",
+     "name": "Paukukalo"
+    },
+    {
+     "id": "hi_maui_8",
+     "name": "Honolua Bay"
+    },
+    {
+     "id": "hi_maui_9",
+     "name": "Slaughterhouse"
+    },
+    {
+     "id": "hi_maui_10",
+     "name": "D.T. Fleming"
+    },
+    {
+     "id": "hi_maui_11",
+     "name": "S-Turns (Honokowai)"
+    },
+    {
+     "id": "hi_maui_12",
+     "name": "Rainbows"
+    },
+    {
+     "id": "hi_maui_13",
+     "name": "Lahaina Harbor"
+    },
+    {
+     "id": "hi_maui_14",
+     "name": "Breakwall"
+    },
+    {
+     "id": "hi_maui_15",
+     "name": "Shark Pit"
+    },
+    {
+     "id": "hi_maui_16",
+     "name": "Puamana"
+    },
+    {
+     "id": "hi_maui_17",
+     "name": "Launiupoko"
+    },
+    {
+     "id": "hi_maui_18",
+     "name": "Olowalu"
+    },
+    {
+     "id": "hi_maui_19",
+     "name": "Ma'alaea (Pipeline of West)"
+    },
+    {
+     "id": "hi_maui_20",
+     "name": "Kihei Cove"
+    },
+    {
+     "id": "hi_maui_21",
+     "name": "Kamaole"
+    }
+   ]
+  },
+  {
+   "id": "Hawaii - Kauai",
+   "label": "Hawaii - Kauai",
+   "spots": [
+    {
+     "id": "hi_kauai_1",
+     "name": "Hanalei Bay (Pavilions)"
+    },
+    {
+     "id": "hi_kauai_2",
+     "name": "Hanalei Bay (The Bowl)"
+    },
+    {
+     "id": "hi_kauai_3",
+     "name": "Hanalei Bay (Waikokos)"
+    },
+    {
+     "id": "hi_kauai_4",
+     "name": "Tunnels (Makua)"
+    },
+    {
+     "id": "hi_kauai_5",
+     "name": "Cannons"
+    },
+    {
+     "id": "hi_kauai_6",
+     "name": "Rock Quarry"
+    },
+    {
+     "id": "hi_kauai_7",
+     "name": "Kealia"
+    },
+    {
+     "id": "hi_kauai_8",
+     "name": "Lydgate"
+    },
+    {
+     "id": "hi_kauai_9",
+     "name": "Kalapaki"
+    },
+    {
+     "id": "hi_kauai_10",
+     "name": "Shipwrecks"
+    },
+    {
+     "id": "hi_kauai_11",
+     "name": "Poipu Beach"
+    },
+    {
+     "id": "hi_kauai_12",
+     "name": "PK's"
+    },
+    {
+     "id": "hi_kauai_13",
+     "name": "Centers"
+    },
+    {
+     "id": "hi_kauai_14",
+     "name": "Acid Drop"
+    },
+    {
+     "id": "hi_kauai_15",
+     "name": "Polihale"
+    }
+   ]
+  },
+  {
+   "id": "Hawaii - Big Island",
+   "label": "Hawaii - Big Island",
+   "spots": [
+    {
+     "id": "hi_bigisland_1",
+     "name": "Honoli'i"
+    },
+    {
+     "id": "hi_bigisland_2",
+     "name": "Pine Trees (Kohanaiki)"
+    },
+    {
+     "id": "hi_bigisland_3",
+     "name": "Banyans"
+    },
+    {
+     "id": "hi_bigisland_4",
+     "name": "Lyman's"
+    },
+    {
+     "id": "hi_bigisland_5",
+     "name": "Magic Sands"
+    },
+    {
+     "id": "hi_bigisland_6",
+     "name": "Kahalu'u"
+    }
+   ]
+  },
+  {
+   "id": "Florida",
+   "label": "Florida",
+   "spots": [
+    {
+     "id": "fl_1",
+     "name": "Cocoa Beach Pier"
+    },
+    {
+     "id": "fl_2",
+     "name": "Sebastian Inlet"
+    },
+    {
+     "id": "fl_3",
+     "name": "New Smyrna Inlet"
+    },
+    {
+     "id": "fl_4",
+     "name": "Ponce Inlet"
+    },
+    {
+     "id": "fl_5",
+     "name": "Jacksonville Pier"
+    },
+    {
+     "id": "fl_6",
+     "name": "Reef Road"
+    },
+    {
+     "id": "fl_7",
+     "name": "South Beach (Miami)"
+    },
+    {
+     "id": "fl_8",
+     "name": "Pump House"
+    },
+    {
+     "id": "fl_9",
+     "name": "Lake Worth Pier"
+    },
+    {
+     "id": "fl_10",
+     "name": "Juno Pier"
+    },
+    {
+     "id": "fl_11",
+     "name": "Jupiter Inlet"
+    },
+    {
+     "id": "fl_12",
+     "name": "St. Augustine Pier"
+    },
+    {
+     "id": "fl_13",
+     "name": "Pensacola Beach"
+    },
+    {
+     "id": "fl_14",
+     "name": "Panama City Beach"
+    }
+   ]
+  },
+  {
+   "id": "New York",
+   "label": "New York",
+   "spots": [
+    {
+     "id": "ny_1",
+     "name": "Lincoln Blvd (Long Beach)"
+    },
+    {
+     "id": "ny_2",
+     "name": "Rockaway (90th St)"
+    },
+    {
+     "id": "ny_3",
+     "name": "Rockaway (67th St)"
+    },
+    {
+     "id": "ny_4",
+     "name": "Ditch Plains (Montauk)"
+    },
+    {
+     "id": "ny_5",
+     "name": "Turtle Cove (Montauk)"
+    },
+    {
+     "id": "ny_6",
+     "name": "Lido Beach"
+    },
+    {
+     "id": "ny_7",
+     "name": "Gilgo Beach"
+    },
+    {
+     "id": "ny_8",
+     "name": "Robert Moses"
+    }
+   ]
+  },
+  {
+   "id": "New Jersey",
+   "label": "New Jersey",
+   "spots": [
+    {
+     "id": "nj_1",
+     "name": "Manasquan Inlet"
+    },
+    {
+     "id": "nj_2",
+     "name": "Belmar (16th Ave)"
+    },
+    {
+     "id": "nj_3",
+     "name": "Casino Pier (Seaside)"
+    },
+    {
+     "id": "nj_4",
+     "name": "Jenkinsons (Pt Pleasant)"
+    },
+    {
+     "id": "nj_5",
+     "name": "Long Beach Island (LBI)"
+    },
+    {
+     "id": "nj_6",
+     "name": "Holyoke (LBI)"
+    },
+    {
+     "id": "nj_7",
+     "name": "Atlantic City (States Ave)"
+    },
+    {
+     "id": "nj_8",
+     "name": "Margate Pier"
+    },
+    {
+     "id": "nj_9",
+     "name": "Ocean City (7th St)"
+    },
+    {
+     "id": "nj_10",
+     "name": "Cape May (The Cove)"
+    },
+    {
+     "id": "nj_11",
+     "name": "Sandy Hook (The Cove)"
+    },
+    {
+     "id": "nj_12",
+     "name": "Asbury Park"
+    }
+   ]
+  },
+  {
+   "id": "North Carolina",
+   "label": "North Carolina",
+   "spots": [
+    {
+     "id": "nc_1",
+     "name": "Outer Banks (Rodanthe)"
+    },
+    {
+     "id": "nc_2",
+     "name": "Cape Hatteras Lighthouse"
+    },
+    {
+     "id": "nc_3",
+     "name": "S-Turns"
+    },
+    {
+     "id": "nc_4",
+     "name": "Frisco"
+    },
+    {
+     "id": "nc_5",
+     "name": "Wrightsville Beach"
+    },
+    {
+     "id": "nc_6",
+     "name": "Nags Head (Jennette's)"
+    },
+    {
+     "id": "nc_7",
+     "name": "Carolina Beach"
+    },
+    {
+     "id": "nc_8",
+     "name": "Surf City"
+    }
+   ]
+  },
+  {
+   "id": "Texas",
+   "label": "Texas",
+   "spots": [
+    {
+     "id": "tx_1",
+     "name": "South Padre Island"
+    },
+    {
+     "id": "tx_2",
+     "name": "Galveston (Flagship)"
+    },
+    {
+     "id": "tx_3",
+     "name": "Surfside Beach"
+    },
+    {
+     "id": "tx_4",
+     "name": "Bob Hall Pier"
+    }
+   ]
+  },
+  {
+   "id": "Rhode Island",
+   "label": "Rhode Island",
+   "spots": [
+    {
+     "id": "ri_1",
+     "name": "Ruggles"
+    },
+    {
+     "id": "ri_2",
+     "name": "Matunuck"
+    },
+    {
+     "id": "ri_3",
+     "name": "Narragansett Town Beach"
+    }
+   ]
+  },
+  {
+   "id": "New Hampshire",
+   "label": "New Hampshire",
+   "spots": [
+    {
+     "id": "nh_1",
+     "name": "The Wall (Hampton)"
+    }
+   ]
+  },
+  {
+   "id": "Maine",
+   "label": "Maine",
+   "spots": [
+    {
+     "id": "me_1",
+     "name": "Higgins Beach"
+    },
+    {
+     "id": "me_2",
+     "name": "Ogunquit River"
+    }
+   ]
+  },
+  {
+   "id": "Massachusetts",
+   "label": "Massachusetts",
+   "spots": [
+    {
+     "id": "ma_1",
+     "name": "Coast Guard Beach"
+    }
+   ]
+  },
+  {
+   "id": "Oregon",
+   "label": "Oregon",
+   "spots": [
+    {
+     "id": "or_1",
+     "name": "Seaside Point"
+    },
+    {
+     "id": "or_2",
+     "name": "Cannon Beach"
+    }
+   ]
+  },
+  {
+   "id": "Washington",
+   "label": "Washington",
+   "spots": [
+    {
+     "id": "wa_1",
+     "name": "Westport"
+    }
+   ]
+  },
+  {
+   "id": "Virginia",
+   "label": "Virginia",
+   "spots": [
+    {
+     "id": "va_1",
+     "name": "Virginia Beach (1st St)"
+    },
+    {
+     "id": "va_2",
+     "name": "Croatan"
+    }
+   ]
+  }
+ ]
+}
