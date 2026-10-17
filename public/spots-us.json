@@ -132,6 +132,38 @@
     {
      "id": "ca_sd_32",
      "name": "Imperial Beach"
+    },
+    {
+     "id": "ca_sd_33",
+     "name": "Buccaneer Beach"
+    },
+    {
+     "id": "ca_sd_34",
+     "name": "Carlsbad Warm Water Jetty"
+    },
+    {
+     "id": "ca_sd_35",
+     "name": "Terramar"
+    },
+    {
+     "id": "ca_sd_36",
+     "name": "Fletcher Cove (Solana Beach)"
+    },
+    {
+     "id": "ca_sd_37",
+     "name": "Torrey Pines"
+    },
+    {
+     "id": "ca_sd_38",
+     "name": "Coronado"
+    },
+    {
+     "id": "ca_sd_39",
+     "name": "Silver Strand State Beach"
+    },
+    {
+     "id": "ca_sd_40",
+     "name": "Tijuana Sloughs"
     }
    ]
   },
@@ -238,6 +270,34 @@
     {
      "id": "ca_oc_25",
      "name": "State Park (San Clemente)"
+    },
+    {
+     "id": "ca_oc_26",
+     "name": "Sunset Beach (Warner Ave)"
+    },
+    {
+     "id": "ca_oc_27",
+     "name": "Newport Pier"
+    },
+    {
+     "id": "ca_oc_28",
+     "name": "Little Corona"
+    },
+    {
+     "id": "ca_oc_29",
+     "name": "Victoria Beach"
+    },
+    {
+     "id": "ca_oc_30",
+     "name": "West Street (Laguna)"
+    },
+    {
+     "id": "ca_oc_31",
+     "name": "Poche Beach"
+    },
+    {
+     "id": "ca_oc_32",
+     "name": "North Beach (San Clemente)"
     }
    ]
   },
@@ -324,12 +384,80 @@
     {
      "id": "ca_ven_4",
      "name": "Pitas Point"
+    },
+    {
+     "id": "ca_ven_5",
+     "name": "Mondos"
+    },
+    {
+     "id": "ca_ven_6",
+     "name": "Solimar"
+    },
+    {
+     "id": "ca_ven_7",
+     "name": "Ventura Harbor"
+    },
+    {
+     "id": "ca_ven_8",
+     "name": "Silver Strand (Oxnard)"
+    },
+    {
+     "id": "ca_ven_9",
+     "name": "Port Hueneme"
+    },
+    {
+     "id": "ca_ven_10",
+     "name": "Point Mugu"
+    },
+    {
+     "id": "ca_la_17",
+     "name": "Staircase Beach"
+    },
+    {
+     "id": "ca_la_18",
+     "name": "Little Dume"
+    },
+    {
+     "id": "ca_la_19",
+     "name": "Latigo Canyon"
+    },
+    {
+     "id": "ca_la_20",
+     "name": "Big Rock (Malibu)"
+    },
+    {
+     "id": "ca_la_21",
+     "name": "Will Rogers"
+    },
+    {
+     "id": "ca_la_22",
+     "name": "Venice Pier"
+    },
+    {
+     "id": "ca_la_23",
+     "name": "Dockweiler"
+    },
+    {
+     "id": "ca_la_24",
+     "name": "Haggerty's"
+    },
+    {
+     "id": "ca_la_25",
+     "name": "Lunada Bay"
+    },
+    {
+     "id": "ca_la_26",
+     "name": "Palos Verdes Cove"
+    },
+    {
+     "id": "ca_la_27",
+     "name": "Cabrillo Beach"
     }
    ]
   },
   {
-   "id": "California - Central & North",
-   "label": "California - Central & North",
+   "id": "California - Santa Barbara",
+   "label": "California - Santa Barbara",
    "spots": [
     {
      "id": "ca_sb_1",
@@ -343,6 +471,44 @@
      "id": "ca_sb_3",
      "name": "Jalama"
     },
+    {
+     "id": "ca_sb_4",
+     "name": "Leadbetter"
+    },
+    {
+     "id": "ca_sb_5",
+     "name": "Campus Point (UCSB)"
+    },
+    {
+     "id": "ca_sb_6",
+     "name": "Devereux (Coal Oil Point)"
+    },
+    {
+     "id": "ca_sb_7",
+     "name": "Hammond's Reef"
+    },
+    {
+     "id": "ca_sb_8",
+     "name": "Refugio"
+    },
+    {
+     "id": "ca_sb_9",
+     "name": "Haskell's"
+    },
+    {
+     "id": "ca_sb_10",
+     "name": "Carpinteria (Tar Pits)"
+    },
+    {
+     "id": "ca_sb_11",
+     "name": "Cojo Point (Hollister Ranch)"
+    }
+   ]
+  },
+  {
+   "id": "California - Central Coast",
+   "label": "California - Central Coast",
+   "spots": [
     {
      "id": "ca_slo_1",
      "name": "Pismo Beach Pier"
@@ -372,6 +538,92 @@
      "name": "Waddell Creek"
     },
     {
+     "id": "ca_cc_1",
+     "name": "Surf Beach (Lompoc)"
+    },
+    {
+     "id": "ca_cc_2",
+     "name": "Shell Beach"
+    },
+    {
+     "id": "ca_cc_3",
+     "name": "Avila Beach"
+    },
+    {
+     "id": "ca_cc_4",
+     "name": "Hazard Canyon (Montana de Oro)"
+    },
+    {
+     "id": "ca_cc_5",
+     "name": "Cayucos Pier"
+    },
+    {
+     "id": "ca_cc_6",
+     "name": "Moonstone Beach (Cambria)"
+    },
+    {
+     "id": "ca_cc_7",
+     "name": "San Simeon"
+    },
+    {
+     "id": "ca_cc_8",
+     "name": "Sand Dollar Beach (Big Sur)"
+    },
+    {
+     "id": "ca_cc_9",
+     "name": "Carmel Beach"
+    },
+    {
+     "id": "ca_cc_10",
+     "name": "Asilomar"
+    },
+    {
+     "id": "ca_cc_11",
+     "name": "Marina State Beach"
+    },
+    {
+     "id": "ca_cc_12",
+     "name": "Moss Landing"
+    },
+    {
+     "id": "ca_cc_13",
+     "name": "Manresa"
+    },
+    {
+     "id": "ca_cc_14",
+     "name": "Capitola"
+    },
+    {
+     "id": "ca_cc_15",
+     "name": "38th Avenue"
+    },
+    {
+     "id": "ca_cc_16",
+     "name": "Natural Bridges"
+    },
+    {
+     "id": "ca_cc_17",
+     "name": "Four Mile"
+    },
+    {
+     "id": "ca_cc_18",
+     "name": "Davenport Landing"
+    },
+    {
+     "id": "ca_cc_19",
+     "name": "Scott Creek"
+    },
+    {
+     "id": "ca_cc_20",
+     "name": "Ano Nuevo"
+    }
+   ]
+  },
+  {
+   "id": "California - NorCal",
+   "label": "California - NorCal",
+   "spots": [
+    {
      "id": "ca_sf_1",
      "name": "Mavericks"
     },
@@ -386,6 +638,66 @@
     {
      "id": "ca_sf_4",
      "name": "Cronkhite"
+    },
+    {
+     "id": "ca_nc_1",
+     "name": "Montara"
+    },
+    {
+     "id": "ca_nc_2",
+     "name": "Linda Mar (Pacifica)"
+    },
+    {
+     "id": "ca_nc_3",
+     "name": "Sharp Park"
+    },
+    {
+     "id": "ca_nc_4",
+     "name": "Ocean Beach (Sloat)"
+    },
+    {
+     "id": "ca_nc_5",
+     "name": "Stinson Beach"
+    },
+    {
+     "id": "ca_nc_6",
+     "name": "Bolinas"
+    },
+    {
+     "id": "ca_nc_7",
+     "name": "Dillon Beach"
+    },
+    {
+     "id": "ca_nc_8",
+     "name": "Salmon Creek"
+    },
+    {
+     "id": "ca_nc_9",
+     "name": "Point Arena"
+    },
+    {
+     "id": "ca_nc_10",
+     "name": "Big River (Mendocino)"
+    },
+    {
+     "id": "ca_nc_11",
+     "name": "Shelter Cove"
+    },
+    {
+     "id": "ca_nc_12",
+     "name": "North Jetty (Humboldt)"
+    },
+    {
+     "id": "ca_nc_13",
+     "name": "Moonstone Beach (Humboldt)"
+    },
+    {
+     "id": "ca_nc_14",
+     "name": "Camel Rock (Trinidad)"
+    },
+    {
+     "id": "ca_nc_15",
+     "name": "South Beach (Crescent City)"
     }
    ]
   },
@@ -718,6 +1030,18 @@
     {
      "id": "hi_maui_21",
      "name": "Kamaole"
+    },
+    {
+     "id": "hi_maui_22",
+     "name": "Big Beach (Makena)"
+    },
+    {
+     "id": "hi_maui_23",
+     "name": "Hamoa"
+    },
+    {
+     "id": "hi_maui_24",
+     "name": "Paia Bay"
     }
    ]
   },
@@ -784,6 +1108,18 @@
     {
      "id": "hi_kauai_15",
      "name": "Polihale"
+    },
+    {
+     "id": "hi_kauai_16",
+     "name": "Kekaha"
+    },
+    {
+     "id": "hi_kauai_17",
+     "name": "Pakalas (Infinities)"
+    },
+    {
+     "id": "hi_kauai_18",
+     "name": "Anahola"
     }
    ]
   },
@@ -814,12 +1150,32 @@
     {
      "id": "hi_bigisland_6",
      "name": "Kahalu'u"
+    },
+    {
+     "id": "hi_bigisland_7",
+     "name": "Hapuna Beach"
+    },
+    {
+     "id": "hi_bigisland_8",
+     "name": "Kua Bay"
+    },
+    {
+     "id": "hi_bigisland_9",
+     "name": "Richardson's (Hilo)"
+    },
+    {
+     "id": "hi_bigisland_10",
+     "name": "Pohoiki"
+    },
+    {
+     "id": "hi_bigisland_11",
+     "name": "Waipio Valley"
     }
    ]
   },
   {
-   "id": "Florida",
-   "label": "Florida",
+   "id": "Florida - East Coast",
+   "label": "Florida - East Coast",
    "spots": [
     {
      "id": "fl_1",
@@ -870,18 +1226,270 @@
      "name": "St. Augustine Pier"
     },
     {
+     "id": "fl_15",
+     "name": "Fernandina Beach"
+    },
+    {
+     "id": "fl_16",
+     "name": "Hanna Park"
+    },
+    {
+     "id": "fl_17",
+     "name": "Atlantic Beach"
+    },
+    {
+     "id": "fl_18",
+     "name": "Mickler's Landing"
+    },
+    {
+     "id": "fl_19",
+     "name": "Vilano Beach"
+    },
+    {
+     "id": "fl_20",
+     "name": "Crescent Beach"
+    },
+    {
+     "id": "fl_21",
+     "name": "Matanzas Inlet"
+    },
+    {
+     "id": "fl_22",
+     "name": "Flagler Beach Pier"
+    },
+    {
+     "id": "fl_23",
+     "name": "Daytona Beach (Main St Pier)"
+    },
+    {
+     "id": "fl_24",
+     "name": "Playalinda Beach"
+    },
+    {
+     "id": "fl_25",
+     "name": "Cherie Down Park (Cape Canaveral)"
+    },
+    {
+     "id": "fl_26",
+     "name": "Indialantic Boardwalk"
+    },
+    {
+     "id": "fl_27",
+     "name": "Melbourne Beach"
+    },
+    {
+     "id": "fl_28",
+     "name": "Vero Beach (Jaycee Park)"
+    },
+    {
+     "id": "fl_29",
+     "name": "Fort Pierce Inlet"
+    },
+    {
+     "id": "fl_30",
+     "name": "Bathtub Reef (Stuart)"
+    },
+    {
+     "id": "fl_31",
+     "name": "Boynton Inlet"
+    },
+    {
+     "id": "fl_32",
+     "name": "Delray Beach"
+    },
+    {
+     "id": "fl_33",
+     "name": "Boca Raton Inlet"
+    },
+    {
+     "id": "fl_34",
+     "name": "Deerfield Beach Pier"
+    },
+    {
+     "id": "fl_35",
+     "name": "Pompano Beach Pier"
+    },
+    {
+     "id": "fl_36",
+     "name": "Fort Lauderdale"
+    },
+    {
+     "id": "fl_37",
+     "name": "Hollywood Beach"
+    },
+    {
+     "id": "fl_38",
+     "name": "Haulover Inlet"
+    }
+   ]
+  },
+  {
+   "id": "Florida - Gulf Coast",
+   "label": "Florida - Gulf Coast",
+   "spots": [
+    {
      "id": "fl_13",
      "name": "Pensacola Beach"
     },
     {
      "id": "fl_14",
      "name": "Panama City Beach"
+    },
+    {
+     "id": "fl_39",
+     "name": "Navarre Beach"
+    },
+    {
+     "id": "fl_40",
+     "name": "Destin"
+    },
+    {
+     "id": "fl_41",
+     "name": "Clearwater Beach"
+    },
+    {
+     "id": "fl_42",
+     "name": "St. Pete Beach"
+    },
+    {
+     "id": "fl_43",
+     "name": "Siesta Key"
+    },
+    {
+     "id": "fl_44",
+     "name": "Venice Jetties"
+    }
+   ]
+  },
+  {
+   "id": "North Carolina",
+   "label": "Southeast - N. Carolina",
+   "spots": [
+    {
+     "id": "nc_1",
+     "name": "Outer Banks (Rodanthe)"
+    },
+    {
+     "id": "nc_2",
+     "name": "Cape Hatteras Lighthouse"
+    },
+    {
+     "id": "nc_3",
+     "name": "S-Turns"
+    },
+    {
+     "id": "nc_4",
+     "name": "Frisco"
+    },
+    {
+     "id": "nc_5",
+     "name": "Wrightsville Beach"
+    },
+    {
+     "id": "nc_6",
+     "name": "Nags Head (Jennette's)"
+    },
+    {
+     "id": "nc_7",
+     "name": "Carolina Beach"
+    },
+    {
+     "id": "nc_8",
+     "name": "Surf City"
+    },
+    {
+     "id": "nc_9",
+     "name": "Corolla"
+    },
+    {
+     "id": "nc_10",
+     "name": "Kitty Hawk"
+    },
+    {
+     "id": "nc_11",
+     "name": "Avalon Pier (Kill Devil Hills)"
+    },
+    {
+     "id": "nc_12",
+     "name": "Avon Pier"
+    },
+    {
+     "id": "nc_13",
+     "name": "Ocracoke"
+    },
+    {
+     "id": "nc_14",
+     "name": "Atlantic Beach"
+    },
+    {
+     "id": "nc_15",
+     "name": "Emerald Isle"
+    },
+    {
+     "id": "nc_16",
+     "name": "Kure Beach Pier"
+    },
+    {
+     "id": "nc_17",
+     "name": "Holden Beach"
+    },
+    {
+     "id": "nc_18",
+     "name": "Ocean Isle Beach"
+    }
+   ]
+  },
+  {
+   "id": "South Carolina",
+   "label": "Southeast - S. Carolina",
+   "spots": [
+    {
+     "id": "sc_1",
+     "name": "Folly Beach Washout"
+    },
+    {
+     "id": "sc_2",
+     "name": "Folly Beach Pier"
+    },
+    {
+     "id": "sc_3",
+     "name": "Sullivan's Island"
+    },
+    {
+     "id": "sc_4",
+     "name": "Isle of Palms"
+    },
+    {
+     "id": "sc_5",
+     "name": "Pawleys Island"
+    },
+    {
+     "id": "sc_6",
+     "name": "Garden City Pier"
+    },
+    {
+     "id": "sc_7",
+     "name": "Myrtle Beach (2nd Ave Pier)"
+    },
+    {
+     "id": "sc_8",
+     "name": "Cherry Grove Pier"
+    }
+   ]
+  },
+  {
+   "id": "Georgia",
+   "label": "Southeast - Georgia",
+   "spots": [
+    {
+     "id": "ga_1",
+     "name": "Tybee Island Pier"
     }
    ]
   },
   {
    "id": "New York",
-   "label": "New York",
+   "label": "Mid-Atlantic - New York",
    "spots": [
     {
      "id": "ny_1",
@@ -914,12 +1522,40 @@
     {
      "id": "ny_8",
      "name": "Robert Moses"
+    },
+    {
+     "id": "ny_9",
+     "name": "Atlantic Beach"
+    },
+    {
+     "id": "ny_10",
+     "name": "Jones Beach"
+    },
+    {
+     "id": "ny_11",
+     "name": "Ocean Beach (Fire Island)"
+    },
+    {
+     "id": "ny_12",
+     "name": "Smith Point"
+    },
+    {
+     "id": "ny_13",
+     "name": "Westhampton (Dune Road)"
+    },
+    {
+     "id": "ny_14",
+     "name": "Shinnecock Inlet"
+    },
+    {
+     "id": "ny_15",
+     "name": "Flying Point (Southampton)"
     }
    ]
   },
   {
    "id": "New Jersey",
-   "label": "New Jersey",
+   "label": "Mid-Atlantic - New Jersey",
    "spots": [
     {
      "id": "nj_1",
@@ -968,50 +1604,400 @@
     {
      "id": "nj_12",
      "name": "Asbury Park"
+    },
+    {
+     "id": "nj_13",
+     "name": "Sea Bright"
+    },
+    {
+     "id": "nj_14",
+     "name": "Monmouth Beach"
+    },
+    {
+     "id": "nj_15",
+     "name": "Long Branch"
+    },
+    {
+     "id": "nj_16",
+     "name": "Deal"
+    },
+    {
+     "id": "nj_17",
+     "name": "Bradley Beach"
+    },
+    {
+     "id": "nj_18",
+     "name": "Spring Lake"
+    },
+    {
+     "id": "nj_19",
+     "name": "Bay Head"
+    },
+    {
+     "id": "nj_20",
+     "name": "Lavallette"
+    },
+    {
+     "id": "nj_21",
+     "name": "Ortley Beach"
+    },
+    {
+     "id": "nj_22",
+     "name": "Island Beach State Park"
+    },
+    {
+     "id": "nj_23",
+     "name": "Brigantine"
+    },
+    {
+     "id": "nj_24",
+     "name": "Ventnor"
+    },
+    {
+     "id": "nj_25",
+     "name": "Strathmere"
+    },
+    {
+     "id": "nj_26",
+     "name": "Wildwood Crest"
     }
    ]
   },
   {
-   "id": "North Carolina",
-   "label": "North Carolina",
+   "id": "Delaware",
+   "label": "Mid-Atlantic - Delaware",
    "spots": [
     {
-     "id": "nc_1",
-     "name": "Outer Banks (Rodanthe)"
+     "id": "de_1",
+     "name": "Cape Henlopen (Herring Point)"
     },
     {
-     "id": "nc_2",
-     "name": "Cape Hatteras Lighthouse"
+     "id": "de_2",
+     "name": "Rehoboth Beach"
     },
     {
-     "id": "nc_3",
-     "name": "S-Turns"
+     "id": "de_3",
+     "name": "Dewey Beach"
     },
     {
-     "id": "nc_4",
-     "name": "Frisco"
+     "id": "de_4",
+     "name": "Indian River Inlet"
     },
     {
-     "id": "nc_5",
-     "name": "Wrightsville Beach"
+     "id": "de_5",
+     "name": "Bethany Beach"
+    }
+   ]
+  },
+  {
+   "id": "Maryland",
+   "label": "Mid-Atlantic - Maryland",
+   "spots": [
+    {
+     "id": "md_1",
+     "name": "Ocean City Inlet"
     },
     {
-     "id": "nc_6",
-     "name": "Nags Head (Jennette's)"
+     "id": "md_2",
+     "name": "Ocean City (48th St)"
     },
     {
-     "id": "nc_7",
-     "name": "Carolina Beach"
+     "id": "md_3",
+     "name": "Assateague (Maryland)"
+    }
+   ]
+  },
+  {
+   "id": "Virginia",
+   "label": "Mid-Atlantic - Virginia",
+   "spots": [
+    {
+     "id": "va_1",
+     "name": "Virginia Beach (1st St)"
     },
     {
-     "id": "nc_8",
-     "name": "Surf City"
+     "id": "va_2",
+     "name": "Croatan"
+    },
+    {
+     "id": "va_3",
+     "name": "Sandbridge"
+    },
+    {
+     "id": "va_4",
+     "name": "Assateague (Chincoteague)"
+    }
+   ]
+  },
+  {
+   "id": "Rhode Island",
+   "label": "New England - Rhode Island",
+   "spots": [
+    {
+     "id": "ri_1",
+     "name": "Ruggles"
+    },
+    {
+     "id": "ri_2",
+     "name": "Matunuck"
+    },
+    {
+     "id": "ri_3",
+     "name": "Narragansett Town Beach"
+    },
+    {
+     "id": "ri_4",
+     "name": "Misquamicut"
+    },
+    {
+     "id": "ri_5",
+     "name": "Point Judith Lighthouse"
+    },
+    {
+     "id": "ri_6",
+     "name": "Scarborough Beach"
+    },
+    {
+     "id": "ri_7",
+     "name": "First Beach (Newport)"
+    },
+    {
+     "id": "ri_8",
+     "name": "Second Beach (Middletown)"
+    }
+   ]
+  },
+  {
+   "id": "Massachusetts",
+   "label": "New England - Massachusetts",
+   "spots": [
+    {
+     "id": "ma_1",
+     "name": "Coast Guard Beach"
+    },
+    {
+     "id": "ma_2",
+     "name": "Nauset Beach"
+    },
+    {
+     "id": "ma_3",
+     "name": "Marconi Beach"
+    },
+    {
+     "id": "ma_4",
+     "name": "Newcomb Hollow"
+    },
+    {
+     "id": "ma_5",
+     "name": "Long Nook"
+    },
+    {
+     "id": "ma_6",
+     "name": "Nantasket Beach"
+    },
+    {
+     "id": "ma_7",
+     "name": "Devereux Beach"
+    },
+    {
+     "id": "ma_8",
+     "name": "Good Harbor (Gloucester)"
+    },
+    {
+     "id": "ma_9",
+     "name": "South Beach (Martha's Vineyard)"
+    },
+    {
+     "id": "ma_10",
+     "name": "Cisco Beach (Nantucket)"
+    }
+   ]
+  },
+  {
+   "id": "New Hampshire",
+   "label": "New England - N. Hampshire",
+   "spots": [
+    {
+     "id": "nh_1",
+     "name": "The Wall (Hampton)"
+    },
+    {
+     "id": "nh_2",
+     "name": "Jenness Beach"
+    },
+    {
+     "id": "nh_3",
+     "name": "Hampton Beach State Park"
+    }
+   ]
+  },
+  {
+   "id": "Maine",
+   "label": "New England - Maine",
+   "spots": [
+    {
+     "id": "me_1",
+     "name": "Higgins Beach"
+    },
+    {
+     "id": "me_2",
+     "name": "Ogunquit River"
+    },
+    {
+     "id": "me_3",
+     "name": "Long Sands (York)"
+    },
+    {
+     "id": "me_4",
+     "name": "Gooch's Beach (Kennebunk)"
+    },
+    {
+     "id": "me_5",
+     "name": "Old Orchard Beach"
+    },
+    {
+     "id": "me_6",
+     "name": "Scarborough Beach"
+    },
+    {
+     "id": "me_7",
+     "name": "Popham Beach"
+    },
+    {
+     "id": "me_8",
+     "name": "Reid State Park"
+    }
+   ]
+  },
+  {
+   "id": "Oregon",
+   "label": "Pacific NW - Oregon",
+   "spots": [
+    {
+     "id": "or_1",
+     "name": "Seaside Point"
+    },
+    {
+     "id": "or_2",
+     "name": "Cannon Beach"
+    },
+    {
+     "id": "or_3",
+     "name": "Indian Beach (Ecola)"
+    },
+    {
+     "id": "or_4",
+     "name": "Short Sand Beach"
+    },
+    {
+     "id": "or_5",
+     "name": "Manzanita"
+    },
+    {
+     "id": "or_6",
+     "name": "Rockaway Beach"
+    },
+    {
+     "id": "or_7",
+     "name": "Cape Kiwanda (Pacific City)"
+    },
+    {
+     "id": "or_8",
+     "name": "Lincoln City (D River)"
+    },
+    {
+     "id": "or_9",
+     "name": "Otter Rock"
+    },
+    {
+     "id": "or_10",
+     "name": "Agate Beach (Newport)"
+    },
+    {
+     "id": "or_11",
+     "name": "South Beach (Newport)"
+    },
+    {
+     "id": "or_12",
+     "name": "Florence South Jetty"
+    },
+    {
+     "id": "or_13",
+     "name": "Winchester Bay"
+    },
+    {
+     "id": "or_14",
+     "name": "Bastendorff Beach"
+    },
+    {
+     "id": "or_15",
+     "name": "Bandon"
+    },
+    {
+     "id": "or_16",
+     "name": "Battle Rock (Port Orford)"
+    },
+    {
+     "id": "or_17",
+     "name": "Gold Beach"
+    },
+    {
+     "id": "or_18",
+     "name": "Harris Beach (Brookings)"
+    }
+   ]
+  },
+  {
+   "id": "Washington",
+   "label": "Pacific NW - Washington",
+   "spots": [
+    {
+     "id": "wa_1",
+     "name": "Westport"
+    },
+    {
+     "id": "wa_2",
+     "name": "Long Beach"
+    },
+    {
+     "id": "wa_3",
+     "name": "Ocean Shores"
+    },
+    {
+     "id": "wa_4",
+     "name": "Kalaloch"
+    },
+    {
+     "id": "wa_5",
+     "name": "First Beach (La Push)"
+    },
+    {
+     "id": "wa_6",
+     "name": "Hobuck Beach (Neah Bay)"
+    }
+   ]
+  },
+  {
+   "id": "Alaska",
+   "label": "Pacific NW - Alaska",
+   "spots": [
+    {
+     "id": "ak_1",
+     "name": "Cannon Beach (Yakutat)"
+    },
+    {
+     "id": "ak_2",
+     "name": "Sandy Beach (Sitka)"
+    },
+    {
+     "id": "ak_3",
+     "name": "Pasagshak (Kodiak)"
     }
    ]
   },
   {
    "id": "Texas",
-   "label": "Texas",
+   "label": "Gulf Coast - Texas",
    "spots": [
     {
      "id": "tx_1",
@@ -1028,96 +2014,102 @@
     {
      "id": "tx_4",
      "name": "Bob Hall Pier"
-    }
-   ]
-  },
-  {
-   "id": "Rhode Island",
-   "label": "Rhode Island",
-   "spots": [
-    {
-     "id": "ri_1",
-     "name": "Ruggles"
     },
     {
-     "id": "ri_2",
-     "name": "Matunuck"
+     "id": "tx_5",
+     "name": "South Padre Jetties"
     },
     {
-     "id": "ri_3",
-     "name": "Narragansett Town Beach"
-    }
-   ]
-  },
-  {
-   "id": "New Hampshire",
-   "label": "New Hampshire",
-   "spots": [
-    {
-     "id": "nh_1",
-     "name": "The Wall (Hampton)"
-    }
-   ]
-  },
-  {
-   "id": "Maine",
-   "label": "Maine",
-   "spots": [
-    {
-     "id": "me_1",
-     "name": "Higgins Beach"
+     "id": "tx_6",
+     "name": "Port Aransas (Caldwell Pier)"
     },
     {
-     "id": "me_2",
-     "name": "Ogunquit River"
-    }
-   ]
-  },
-  {
-   "id": "Massachusetts",
-   "label": "Massachusetts",
-   "spots": [
-    {
-     "id": "ma_1",
-     "name": "Coast Guard Beach"
-    }
-   ]
-  },
-  {
-   "id": "Oregon",
-   "label": "Oregon",
-   "spots": [
-    {
-     "id": "or_1",
-     "name": "Seaside Point"
+     "id": "tx_7",
+     "name": "Mustang Island"
     },
     {
-     "id": "or_2",
-     "name": "Cannon Beach"
-    }
-   ]
-  },
-  {
-   "id": "Washington",
-   "label": "Washington",
-   "spots": [
-    {
-     "id": "wa_1",
-     "name": "Westport"
-    }
-   ]
-  },
-  {
-   "id": "Virginia",
-   "label": "Virginia",
-   "spots": [
-    {
-     "id": "va_1",
-     "name": "Virginia Beach (1st St)"
+     "id": "tx_8",
+     "name": "Matagorda Beach"
     },
     {
-     "id": "va_2",
-     "name": "Croatan"
+     "id": "tx_9",
+     "name": "Galveston (61st Street)"
+    },
+    {
+     "id": "tx_10",
+     "name": "Crystal Beach (Bolivar)"
+    }
+   ]
+  },
+  {
+   "id": "Alabama",
+   "label": "Gulf Coast - Alabama",
+   "spots": [
+    {
+     "id": "al_1",
+     "name": "Gulf Shores Public Beach"
+    },
+    {
+     "id": "al_2",
+     "name": "Perdido Pass (Orange Beach)"
+    }
+   ]
+  },
+  {
+   "id": "Puerto Rico",
+   "label": "Puerto Rico",
+   "spots": [
+    {
+     "id": "pr_1",
+     "name": "Domes (Rincon)"
+    },
+    {
+     "id": "pr_2",
+     "name": "Maria's (Rincon)"
+    },
+    {
+     "id": "pr_3",
+     "name": "Tres Palmas"
+    },
+    {
+     "id": "pr_4",
+     "name": "Sandy Beach (Rincon)"
+    },
+    {
+     "id": "pr_5",
+     "name": "Crash Boat"
+    },
+    {
+     "id": "pr_6",
+     "name": "Wilderness"
+    },
+    {
+     "id": "pr_7",
+     "name": "Gas Chambers (Aguadilla)"
+    },
+    {
+     "id": "pr_8",
+     "name": "Surfer's Beach (Aguadilla)"
+    },
+    {
+     "id": "pr_9",
+     "name": "Jobos Beach (Isabela)"
+    },
+    {
+     "id": "pr_10",
+     "name": "Middles (Isabela)"
+    },
+    {
+     "id": "pr_11",
+     "name": "Mar Chiquita (Manati)"
+    },
+    {
+     "id": "pr_12",
+     "name": "Pinones"
+    },
+    {
+     "id": "pr_13",
+     "name": "La Pared (Luquillo)"
     }
    ]
   }
